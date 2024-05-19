@@ -1,0 +1,29 @@
+.home{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.create_form input{
+  width: 300px;
+  padding: 10px;
+  border-bottom: 2px solid;
+  outline: none;
+}
+.create_form button {
+  padding: 10px;
+  background-color: brown;
+  color: white;
+  cursor: pointer;
+}
+
+.title{
+  display: flex;
+  align-items: center;
+  width: 395px;
+  justify-content: space-between;
+  background-color: brown;
+  color: white;
+  height: 35px;
+  padding: 2px 5px 2px 5px;
+  margin-top: 2px;
+}
