@@ -11,11 +11,11 @@ function Home() {
     }, [])
 
     const handleDelete = (id) => {
-        axios.delete('http://localhost:3001/delete/'+id)
-        .then(result => {
-            location.reload()
-        })
-        .catch(err => console.log(err))
+        axios.delete('http://localhost:3001/delete/' + id)
+            .then(result => {
+                location.reload()
+            })
+            .catch(err => console.log(err))
     }
 
     return (
@@ -32,8 +32,8 @@ function Home() {
                         <div className='title'>
                             <p>{book.title}</p>
                             <div>
-                                <button 
-                                onClick={() => handleDelete(book._id)}>Remove</button>
+                                <button
+                                    onClick={() => handleDelete(book._id)}>Remove</button>
                             </div>
                         </div>
                     ))
